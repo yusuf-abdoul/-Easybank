@@ -3,7 +3,6 @@
 }
 
 .article {
-    &_content {}
 
     &_grid {
         display: grid;
@@ -23,7 +22,7 @@
         border-radius: 0.3125rem;
         background-color: $white;
         overflow: hidden;
-        box-shadow: 0px 3px 12px rgba(0,0,0,0.15);
+        box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
         transition: all 0.15s ease-in-out;
 
         &:hover {
