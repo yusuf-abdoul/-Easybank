@@ -3,20 +3,21 @@
 
     // Hamburger open styles
     &.open {
-        
-        .header__menu{
+
+        .header__menu {
             >span:first-child {
                 transform: rotate(45deg);
             }
+
             >span:nth-child(2) {
-                opacity: 0;   
+                opacity: 0;
             }
+
             >span:last-child {
                 transform: rotate(-45deg);
-            }   
+            }
         }
     }
-
 
     .overlay {
         opacity: 0;
@@ -28,14 +29,15 @@
         background-image: linear-gradient($darkBlue, transparent);
 
     }
+
     nav {
         position: relative;
         background-color: $white;
         padding-top: 1.0625rem;
         padding-bottom: 1.0625rem;
-        
+
     }
-    
+
     &__logo {
 
         img {
@@ -44,6 +46,7 @@
         }
 
     }
+
     &__menu-overlay {
         position: absolute;
         width: calc(100% - 3rem - 1rem);
@@ -53,7 +56,7 @@
         margin-top: 1.5rem;
         padding: 1.625rem;
         border-radius: 3px;
-        
+        z-index: 10;
 
         a {
             display: block;
@@ -79,10 +82,7 @@
                 margin-bottom: 5px;
             }
         }
-
-        
     }
-    
 
     &__links {
 
@@ -120,4 +120,3 @@
     }
 
 }
-

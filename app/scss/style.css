@@ -245,6 +245,7 @@ button:hover,
   margin-top: 1.5rem;
   padding: 1.625rem;
   border-radius: 3px;
+  z-index: 10;
 }
 .header__menu-overlay a {
   display: block;
