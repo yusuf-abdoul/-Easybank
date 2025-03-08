@@ -496,4 +496,83 @@ button:hover,
 }
 .article_description {
   font-size: 0.8125rem;
+}
+
+.footer {
+  background-color: hsl(233, 26%, 24%);
+  color: hsl(0, 0%, 100%);
+  padding: 2.5rem;
+  text-align: center;
+}
+@media (min-width: 64em) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+    gap: 1rem;
+    justify-items: start;
+  }
+}
+.footer a {
+  color: hsl(0, 0%, 100%);
+}
+.footer_logo {
+  margin-bottom: 1.875rem;
+  display: inline-block;
+}
+@media (min-width: 64em) {
+  .footer_logo {
+    grid-area: logo;
+  }
+}
+.footer_social {
+  margin-bottom: 1.875rem;
+}
+@media (min-width: 64em) {
+  .footer_social {
+    grid-area: social;
+  }
+}
+.footer_social a {
+  display: inline-block;
+}
+.footer_social a:not(:last-child) {
+  margin-right: 1rem;
+}
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 64em) {
+  .footer_links {
+    align-items: start;
+  }
+}
+@media (min-width: 64em) {
+  .footer_links.col1 {
+    grid-area: links1;
+  }
+}
+.footer_links.col2 {
+  margin-bottom: 1.875rem;
+}
+@media (min-width: 64em) {
+  .footer_links.col2 {
+    grid-area: links2;
+  }
+}
+.footer_links a {
+  line-height: 3.25rem;
+}
+@media (min-width: 64em) {
+  .footer_cta {
+    grid-area: cta;
+    text-align: right;
+    justify-self: end;
+  }
+}
+.footer_cta a.button {
+  margin-bottom: 1.875rem;
 }/*# sourceMappingURL=style.css.map */
